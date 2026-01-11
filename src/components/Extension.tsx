@@ -1,14 +1,11 @@
 import { Box, Button, Card, Flex, Heading, Switch, Text } from "@radix-ui/themes"
 import type SchemeExtensions from "../entities/Extension"
-import { useEffect, useRef, useState } from "react"
 
 interface extensionsProp {
     props: SchemeExtensions
 }
 
 const Extension: React.FC<extensionsProp> = ({ props }) => {
-
-    const [input, setInput] = useState<HTMLInputElement | boolean>()
 
     // useEffect(() => {
     //     if (input) {
@@ -32,7 +29,7 @@ const Extension: React.FC<extensionsProp> = ({ props }) => {
                 </Flex>
                 <Flex width={"100%"} align={"center"} justify={"between"}>
                     <Button style={{ cursor: "pointer" }}>Remover</Button>
-                    <Switch onChange={(ev: HTMLInputElement): boolean => props.isActive === true ? ev.checked : !ev.checked} type="checkbox" style={{ cursor: "pointer" }} color="red" />
+                    <Switch style={{ cursor: "pointer" }} color="red" />
                 </Flex>
             </Box>
         </Card>
