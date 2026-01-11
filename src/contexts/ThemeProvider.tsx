@@ -26,7 +26,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
     const [extension, setExtension] = useState<SchemeExtensions[]>([])
     const [index, setIndex] = useState<number>(0)
-    const [color, setColor] = useState<string>("colorRed")
+    const color = "colorRed"
 
     useEffect(() => {
         extensioApi.getExtensions().then((data) => setExtension(data))
