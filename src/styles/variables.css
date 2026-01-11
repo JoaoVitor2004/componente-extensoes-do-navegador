@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+button {
+    padding: 7px;
+    cursor: pointer;
+}
+
+.btn {
+    cursor: pointer;
+    width: 100px;
+    padding: 12px;
+}
+
+.background.colorRed {
+    background-color: hsl(3, 71%, 56%);
+}
+
+.background {
+    background-color: hsl(226, 11%, 37%);
+}

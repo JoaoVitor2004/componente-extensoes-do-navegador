@@ -1,0 +1,6 @@
+@media (width <= 450px) {
+    .grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
