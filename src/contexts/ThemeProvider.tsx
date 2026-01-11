@@ -32,6 +32,8 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
         extensioApi.getExtensions().then((data) => setExtension(data))
     }, [])
 
+    console.log(setColor(""))
+
     const [theme, setTheme] = useState<typeTheme>("dark")
 
     const alternateTheme = () => setTheme((prev) => prev === "dark" ? "light" : "dark")
